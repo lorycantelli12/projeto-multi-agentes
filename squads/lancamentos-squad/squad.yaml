@@ -1,0 +1,194 @@
+name: lancamentos-squad
+version: 1.0.0
+description: Squad multi-agente para estruturar lançamentos digitais completos - metodologias, copy, criativos, tráfego, LP/Tech e automações
+author: lorycantelli
+license: MIT
+
+metadata:
+  category: marketing
+  tags:
+    - lançamentos
+    - infoprodutos
+    - marketing-digital
+    - copy
+    - tráfego
+  expertises:
+    - Lançamento Interno (PLF)
+    - Lançamento Externo
+    - Lançamento Meteórico
+    - Lançamento Semente
+    - Lançamento Perpétuo
+    - Corredor Polonês
+    - High Ticket
+
+structure:
+  teams:
+    lideranca:
+      name: Liderança
+      description: Comando estratégico do lançamento
+      agents: [dono, cmo, status-tracker]
+
+    metodologias:
+      name: Metodologias (Experts)
+      description: Especialistas em tipos de lançamento
+      agents: [erico-rocha, tales-perini, leandro-ferrari, micha-menezes, priscila-zillo, wendell-carvalho, icaro-carvalho]
+
+    redes-sociais:
+      name: Redes Sociais
+      description: Conteúdo e engajamento social
+      agents: [paulo-cuenca, reels-creator, stories-manager, community-manager, social-scheduler]
+
+    criativo:
+      name: Criativo
+      description: Design, arte e vídeo
+      agents: [art-director, designer-ads, video-producer]
+
+    copy:
+      name: Copy
+      description: Copywriting em todas as frentes
+      agents: [copy-chief, headline-writer, vsl-writer, webinar-writer, email-sequences, whatsapp-copy, upsell-writer, objection-handler, cpl-writer, urgency-writer, testimonial-curator, faq-writer]
+
+    trafego:
+      name: Tráfego
+      description: Mídia paga e audiências
+      agents: [pedro-sobral, meta-ads-specialist, google-ads-specialist, audience-builder]
+
+    email:
+      name: Email Marketing
+      description: Estratégia e execução de email
+      agents: [email-strategist, nurture-writer, launch-emails, cart-recovery, deliverability]
+
+    lp-tech:
+      name: LP/Tech
+      description: Landing pages, automações e integrações
+      agents: [lp-architect, checkout-optimizer, automation-builder, integration-specialist, tracking-setup]
+
+    guardioes:
+      name: Guardiões
+      description: Compliance, dados e inteligência competitiva
+      agents: [fiscal, data-analyst, espiao]
+
+agents:
+  # Liderança
+  - id: dono
+    file: agents/dono.md
+  - id: cmo
+    file: agents/cmo.md
+  - id: status-tracker
+    file: agents/status-tracker.md
+
+  # Metodologias (Experts)
+  - id: erico-rocha
+    file: agents/erico-rocha.md
+  - id: tales-perini
+    file: agents/tales-perini.md
+  - id: leandro-ferrari
+    file: agents/leandro-ferrari.md
+  - id: micha-menezes
+    file: agents/micha-menezes.md
+  - id: priscila-zillo
+    file: agents/priscila-zillo.md
+  - id: wendell-carvalho
+    file: agents/wendell-carvalho.md
+  - id: icaro-carvalho
+    file: agents/icaro-carvalho.md
+
+  # Redes Sociais
+  - id: paulo-cuenca
+    file: agents/paulo-cuenca.md
+  - id: reels-creator
+    file: agents/reels-creator.md
+  - id: stories-manager
+    file: agents/stories-manager.md
+  - id: community-manager
+    file: agents/community-manager.md
+  - id: social-scheduler
+    file: agents/social-scheduler.md
+
+  # Criativo
+  - id: art-director
+    file: agents/art-director.md
+  - id: designer-ads
+    file: agents/designer-ads.md
+  - id: video-producer
+    file: agents/video-producer.md
+
+  # Copy
+  - id: copy-chief
+    file: agents/copy-chief.md
+  - id: headline-writer
+    file: agents/headline-writer.md
+  - id: vsl-writer
+    file: agents/vsl-writer.md
+  - id: webinar-writer
+    file: agents/webinar-writer.md
+  - id: email-sequences
+    file: agents/email-sequences.md
+  - id: whatsapp-copy
+    file: agents/whatsapp-copy.md
+  - id: upsell-writer
+    file: agents/upsell-writer.md
+  - id: objection-handler
+    file: agents/objection-handler.md
+  - id: cpl-writer
+    file: agents/cpl-writer.md
+  - id: urgency-writer
+    file: agents/urgency-writer.md
+  - id: testimonial-curator
+    file: agents/testimonial-curator.md
+  - id: faq-writer
+    file: agents/faq-writer.md
+
+  # Tráfego
+  - id: pedro-sobral
+    file: agents/pedro-sobral.md
+  - id: meta-ads-specialist
+    file: agents/meta-ads-specialist.md
+  - id: google-ads-specialist
+    file: agents/google-ads-specialist.md
+  - id: audience-builder
+    file: agents/audience-builder.md
+
+  # Email
+  - id: email-strategist
+    file: agents/email-strategist.md
+  - id: nurture-writer
+    file: agents/nurture-writer.md
+  - id: launch-emails
+    file: agents/launch-emails.md
+  - id: cart-recovery
+    file: agents/cart-recovery.md
+  - id: deliverability
+    file: agents/deliverability.md
+
+  # LP/Tech
+  - id: lp-architect
+    file: agents/lp-architect.md
+  - id: checkout-optimizer
+    file: agents/checkout-optimizer.md
+  - id: automation-builder
+    file: agents/automation-builder.md
+  - id: integration-specialist
+    file: agents/integration-specialist.md
+  - id: tracking-setup
+    file: agents/tracking-setup.md
+
+  # Guardiões
+  - id: fiscal
+    file: agents/fiscal.md
+  - id: data-analyst
+    file: agents/data-analyst.md
+  - id: espiao
+    file: agents/espiao.md
+
+workflows:
+  - id: lancamento-completo
+    file: workflows/lancamento-completo.md
+  - id: pre-lancamento
+    file: workflows/pre-lancamento.md
+  - id: semana-de-lancamento
+    file: workflows/semana-de-lancamento.md
+
+dependencies:
+  squads: []
+  tools: []
